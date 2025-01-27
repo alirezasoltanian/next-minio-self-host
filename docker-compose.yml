@@ -1,7 +1,7 @@
 services:
   frontend-app:
     build:
-      context: ./frontend/app
+      context: ./app
       dockerfile: Dockerfile
     container_name: frontend-app
     restart: always
