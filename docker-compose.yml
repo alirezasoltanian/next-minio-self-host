@@ -24,7 +24,7 @@ services:
       traefik.http.routers.frontend-app-https.tls.certresolver: le
       traefik.http.routers.frontend-app-https.service: frontend-app-service
 
-      traefik.http.services.frontend-app-service.loadbalancer.server.port: 3000
+      traefik.http.services.frontend-app-service.loadbalancer.server.port: 3002
       traefik.http.middlewares.frontend-app-headers.headers.customrequestheaders.X-Forwarded-Proto: https
     networks:
       - traefik-public
