@@ -3,8 +3,8 @@ services:
     image: traefik:3.0
     container_name: traefik
     ports:
-      - 80:80 # HTTP port
-      - 443:443 # HTTPS port
+      - 82:82 # HTTP port
+      - 445:445 # HTTPS port
     restart: always
     labels:
       # Traefik configuration
@@ -40,8 +40,8 @@ services:
       - --providers.docker.exposedbydefault=false
 
       # Entrypoints configuration
-      - --entrypoints.http.address=:80
-      - --entrypoints.https.address=:443
+      - --entrypoints.http.address=:82
+      - --entrypoints.https.address=:445
 
       # Let's Encrypt configuration
       - --certificatesresolvers.le.acme.email=${ACME_EMAIL?Variable not set}
