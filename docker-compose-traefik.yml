@@ -5,8 +5,6 @@ services:
     ports:
       - 82:82 # HTTP port
       - 445:445 # HTTPS port
-    environment:
-      - TRAEFIK_DOMAIN=traefik.solop.ir
     restart: always
     labels:
       # Traefik configuration
