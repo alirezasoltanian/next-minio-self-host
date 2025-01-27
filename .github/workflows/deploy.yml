@@ -21,7 +21,6 @@ jobs:
             docker compose up -d --build
 
 # pm2 delete fn-solop
-
 # npm i
 # npm run build
 # pm2 start npm --name "fn-solop" -- run start
